@@ -1,0 +1,25 @@
+.block{
+    background-color: var(--block);
+    border-radius: 15px;
+    margin: 5px;
+    color: #FFC200;
+    transition: all ease 0.8s;
+    width: 150px;
+    height: 150px;
+}
+
+@media (max-width:480px) { 
+    .block{
+        margin: 0;
+        width: 120px;
+        height: 120px;
+    }
+ }
+ 
+ @media (max-width:375px) { 
+    .block{
+        margin: 0;
+        width: 100px;
+        height: 100px;
+    }
+ }

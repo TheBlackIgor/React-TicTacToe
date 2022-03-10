@@ -1,0 +1,29 @@
+.backBt{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+.board{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@media (max-width:479px) { 
+    .board{
+        margin: 0;
+        width: 380px;
+        height: 380px;
+    }
+ }
+ @media (max-width:375px) {
+    .board{
+        margin: 0;
+        width: 320px;
+        height: 320px;
+    }
+ }
