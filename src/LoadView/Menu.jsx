@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './Menu.css';
 import { GoX } from "react-icons/go"
 import { BiCircle } from "react-icons/bi"
-import { VscCircleOutline } from "react-icons/vsc"
 
 function Menu(props) {
 	const [player, setPlayer] = useState('o');

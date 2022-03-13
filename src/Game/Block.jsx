@@ -1,25 +1,36 @@
 import './Block.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { GoX } from "react-icons/go"
+import { BiCircle } from "react-icons/bi"
 
 
 function Block(props) {
 
-    window.addEventListener('resize', () => {
+    const [content, setContent] = useState(props.value)
+
+    const handleClick = () => {
+        setContent(props.turn)
+        props.changeBoard(props.id, props.turn)
+    }
+
+
+    if (content === '-') {
         return (
             <div
-                className={window.innerWidth > 600 ? 'bigBlock block' : 'smallBlock block'}
-                onClick={props.fillBlock}
-            />
-
+                className='block'
+                onClick={handleClick}
+            >
+            </div>
         )
-    })
-    return (
-        <div
-            className={window.innerWidth > 600 ? 'bigBlock block' : 'smallBlock block'}
-            onClick={props.fillBlock}
-        />
-
-    )
+    } else {
+        return (
+            <div
+                className='block'
+            >
+                {content === 'o' ? <BiCircle size={50} color='#FFC200' /> : <GoX size={50} color='#FFC200' />}
+            </div>
+        )
+    }
 
 }
 

@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .App-logo {
@@ -41,4 +42,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+.currentMove{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: rgb(16, 42, 73);
+  width: 320px;
+  height: 90px;
+  margin: 10px;
+  border-radius:20px ;
+  color: #FFC200;
+  transition: all ease 0.5s;
 }

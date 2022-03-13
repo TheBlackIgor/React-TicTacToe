@@ -1,0 +1,17 @@
+.score{
+    padding: 10px;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.score div{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(16, 42, 73);
+    padding: 10px;
+    font-size: 40px;
+    color: aliceblue;
+}
