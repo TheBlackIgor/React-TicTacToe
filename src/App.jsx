@@ -9,7 +9,7 @@ import Score from './LoadView/Score'
 
 function App() {
 	const [player, setPlayer] = useState('o');
-	const [state, setState] = useState('game')
+	const [state, setState] = useState('menu')
 	const [move, setMove] = useState('o')
 	const [boardKey, setBoardKey] = useState(Math.random())
 	const [firstMove, setFirstMove] = useState('o')
